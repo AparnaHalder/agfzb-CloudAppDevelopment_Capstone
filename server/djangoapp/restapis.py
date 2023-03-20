@@ -62,6 +62,7 @@ def get_dealer_by_id_from_cf(url, id):
         dealers = json_result[0]
     dealer_doc = dealers
     dealer_obj = CarDealer(address=dealers["address"], city=dealers["city"],id=dealers["id"], lat=dealers["lat"], long=dealers["long"], full_name=dealers["full_name"],short_name=dealers["short_name"], st=dealers["st"], zip=dealers["zip"])
+    
     return dealer_obj
 
 
